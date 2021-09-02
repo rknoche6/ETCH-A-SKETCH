@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script src="js-file.js" defer></script>
+  </head>
+  
+  <body>
+    <h1>
+      Etch-a-Sketch
+    </h1>
+    <div id="btn">
+      <button id="reset">Reset</button>
+      <button id="change_colors">Change colors</button>
+    <div>
+    <div id="container"></div>
+  </body>
+
+  <style>
+      :root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #btn {
+    text-align: center;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  </style>
+
+</html>
